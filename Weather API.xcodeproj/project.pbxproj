@@ -12,6 +12,9 @@
 		934B895122680893009934C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934B894F22680893009934C9 /* Main.storyboard */; };
 		934B895322680895009934C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934B895222680895009934C9 /* Assets.xcassets */; };
 		934B895622680895009934C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934B895422680895009934C9 /* LaunchScreen.storyboard */; };
+		934B895F226808DA009934C9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B895E226808DA009934C9 /* DataService.swift */; };
+		934B896122680978009934C9 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B896022680978009934C9 /* ObjectModel.swift */; };
+		93CA2529226EFCCB0098BF6D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA2528226EFCCB0098BF6D /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		934B895222680895009934C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		934B895522680895009934C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		934B895722680895009934C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934B895E226808DA009934C9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		934B896022680978009934C9 /* ObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
+		93CA2528226EFCCB0098BF6D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		934B894A22680893009934C9 /* Weather API */ = {
 			isa = PBXGroup;
 			children = (
+				93CA2527226EF6220098BF6D /* Controller */,
+				934B895D226808C9009934C9 /* Model */,
 				934B894B22680893009934C9 /* AppDelegate.swift */,
-				934B894D22680893009934C9 /* ViewController.swift */,
 				934B894F22680893009934C9 /* Main.storyboard */,
 				934B895222680895009934C9 /* Assets.xcassets */,
 				934B895422680895009934C9 /* LaunchScreen.storyboard */,
 				934B895722680895009934C9 /* Info.plist */,
 			);
 			path = "Weather API";
+			sourceTree = "<group>";
+		};
+		934B895D226808C9009934C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				934B895E226808DA009934C9 /* DataService.swift */,
+				934B896022680978009934C9 /* ObjectModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93CA2527226EF6220098BF6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				934B894D22680893009934C9 /* ViewController.swift */,
+				93CA2528226EFCCB0098BF6D /* TableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CA2529226EFCCB0098BF6D /* TableViewCell.swift in Sources */,
+				934B896122680978009934C9 /* ObjectModel.swift in Sources */,
+				934B895F226808DA009934C9 /* DataService.swift in Sources */,
 				934B894E22680893009934C9 /* ViewController.swift in Sources */,
 				934B894C22680893009934C9 /* AppDelegate.swift in Sources */,
 			);
